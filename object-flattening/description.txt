@@ -1,0 +1,4 @@
+let obj = { a: { b: { c: 1 } } };
+let output = { "a.b.c": 1 };
+
+What’s your go-to approach for flattening nested objects in JS? Share your recursive/iterative solutions!
