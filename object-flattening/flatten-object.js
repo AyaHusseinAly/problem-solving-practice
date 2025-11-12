@@ -1,7 +1,7 @@
 let flattenObject = (obj) => {
     let flattenedObj = {};
     for (let key of Object.keys(obj)) {
-        if (Object.prototype.toString.call(obj[key]) === '[object Object]') {
+        if (Object.prototype.toString.call(obj[key]) === '[object Object]') { // or use  tree.constructor !== Object
             const internalObj = flattenObject(obj[key]);
             for (let k of Object.keys(internalObj)) {
                 flattenedObj[key + '.' + k] = internalObj[k]

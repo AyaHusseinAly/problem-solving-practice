@@ -1,0 +1,27 @@
+🧩 Problem
+
+Implement a function:
+
+function getOpenDays(schedule, time) { ... }
+
+Parameters:
+
+schedule: an array of objects, each describing the store’s open and close time for specific days.
+Example:
+
+[
+  { days: "Wednesday-Friday", open: "8:00 AM", close: "6:00 PM" },
+  { days: "Monday", open: "10:00 AM", close: "6:00 PM" },
+  { days: "Sunday", open: null, close: null } // Always open
+]
+
+
+time: a string, e.g. "11:00 AM"
+
+Output:
+
+An array of strings representing the days that are open at the given time.
+For example:
+
+getOpenDays(schedule, "11:00 AM")
+// → ["Monday", "Wednesday", "Thursday", "Friday", "Sunday"]

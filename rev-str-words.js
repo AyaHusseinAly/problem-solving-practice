@@ -12,7 +12,3 @@ function revStr(string) {
 }
 
 console.log("o/p for Aya Hussein =====>", revStr("Aya Hussein Ali"));
-
-
-
-//   -------------------------------- 111###
